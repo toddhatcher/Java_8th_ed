@@ -1,0 +1,22 @@
+// ComputeCommission
+
+public class ComputeCommission
+{
+	public static void main(String[] args)
+	{
+		char vType = 'S';
+		int value = 23000;
+		double commRate = 0.08
+		ComputeCommission(value, commRate, vType);
+		ComputeCommission(40000, 0.10, 'L');
+	}
+
+	public static void ComputeCommission(int value, double rate, char vehicle)
+	{
+		double commission;
+		commission = value * rate;
+		System.out.println("\nThe " + vehicle + " type vehichle is worth $" + value);
+		System.out.println("With " + (rate * 100) + "% commission rate, the commission is $" +
+			commission);
+	}
+}
